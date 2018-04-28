@@ -7,9 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <nav class="menu"></nav>
-        <%= yield%>
+    <header></header>
+    <div class="menuButton" onclick="toggleMenu()">
+        <p>menu</p>
     </div>
+    <div class="menu">
+        <p>kek</p>
+    </div>
+    <%= yield%>
+    <script src="./js/main.js"></script>
 </body>
 </html>
