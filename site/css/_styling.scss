@@ -6,17 +6,24 @@ body {
 }
 
 header {
+    img {
+        width: 40vw;
+        height: auto;
+        margin-top: 13vh;
+        margin-left: 30vw;
+        
+    }
     width: 100vw;
     height: 25vh;
     margin: 0px;
     padding: 0px;
-    background-color: cornflowerblue;
+    background-color: cornflowerblue;   
 }
 
 div.menuButton {
     width: 75vw;
-    height: 8vh;
-    margin-top: 10vh;
+    height: 10vh;
+    margin-top: 15vh;
     margin-bottom: 0px;
     padding-bottom: 0px;
     margin-left: auto;
