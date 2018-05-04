@@ -1,25 +1,27 @@
 body {
-  width: 100%;
+  width: 100vw;
   height: 100%;
   margin: 0px;
   padding: 0px; }
 
 header {
-  width: 100vw;
-  height: 25vh;
-  margin: 0px;
-  padding: 0px;
+  position: relative;
+  height: 40vh;
   background-color: cornflowerblue; }
-  header img {
+  header .circle {
+    position: absolute;
     width: 40vw;
-    height: auto;
-    margin-top: 13vh;
-    margin-left: 30vw; }
+    height: 40vw;
+    border-radius: 50%;
+    background: black;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%); }
 
 div.menuButton {
   width: 75vw;
   height: 10vh;
-  margin-top: 15vh;
+  margin-top: 20vh;
   margin-bottom: 0px;
   padding-bottom: 0px;
   margin-left: auto;
