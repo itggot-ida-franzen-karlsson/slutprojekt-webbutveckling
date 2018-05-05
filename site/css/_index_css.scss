@@ -22,4 +22,11 @@ div.aboutMe {
         grid-template-rows: repeat(3, 1fr);
         grid-template-columns: 1fr 1fr;
     }
+
+    div.aboutMe {
+        margin-top: 20vh;
+        margin-left: 10vw;
+        width: 30vw;
+        height: 80vh;
+    }
 }

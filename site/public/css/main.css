@@ -48,6 +48,17 @@ div.show {
   visibility: visible;
   transition: visibility 0s linear 0s, height 0.2s ease-in-out; }
 
+@media only screen and (min-device-width: 799px) {
+  header {
+    height: 50vh; }
+
+  div.menuButton {
+    width: 100vw;
+    height: 10vh;
+    margin-top: -2vh; }
+
+  .circle {
+    display: none; } }
 main.indexGrid {
   display: grid;
   grid-template-rows: repeat(4, 1fr);
@@ -68,4 +79,10 @@ div.aboutMe {
   main.indexGrid {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: 1fr 1fr; } }
+    grid-template-columns: 1fr 1fr; }
+
+  div.aboutMe {
+    margin-top: 20vh;
+    margin-left: 10vw;
+    width: 30vw;
+    height: 80vh; } }

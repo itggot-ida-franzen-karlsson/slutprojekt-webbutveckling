@@ -55,3 +55,20 @@ div.show {
     visibility: visible;
     transition: visibility 0s linear 0s, height 0.2s ease-in-out;
 }
+
+@media only screen and (min-device-width:799px) {
+   
+    header {
+        height: 50vh;
+    }
+
+    div.menuButton {
+        width: 100vw;
+        height: 10vh;
+        margin-top: -2vh;
+    }
+
+    .circle {
+        display: none;
+    }
+}
