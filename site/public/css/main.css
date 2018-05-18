@@ -20,6 +20,9 @@ header {
     transform: translate(-50%, 50%); }
 
 div.menuButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 75vw;
   height: 10vh;
   margin-top: 20vh;
@@ -29,6 +32,9 @@ div.menuButton {
   margin-right: auto;
   border-radius: 3px;
   background-color: #9B74E8; }
+  div.menuButton p {
+    font-family: "Cantata One", serif;
+    color: #ffffff; }
 
 div.menu {
   width: 75vw;
@@ -106,4 +112,7 @@ div.aboutMe {
     margin-bottom: 5vh;
     margin-left: 10vw;
     width: 30vw;
-    height: 80vh; } }
+    height: 80vh; }
+
+  div.displayNoneDesktop {
+    display: none; } }

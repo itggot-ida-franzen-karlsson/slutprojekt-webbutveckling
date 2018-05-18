@@ -25,6 +25,14 @@ header {
 }
 
 div.menuButton {
+    p {
+        font-family: $font-primary;
+        color: #ffffff;
+    }
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 75vw;
     height: 10vh;
     margin-top: 20vh;
