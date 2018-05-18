@@ -2,7 +2,8 @@ body {
   width: 100vw;
   height: 100%;
   margin: 0px;
-  padding: 0px; }
+  padding: 0px;
+  background-color: #2D2D2D; }
 
 header {
   position: relative;
@@ -26,27 +27,39 @@ div.menuButton {
   padding-bottom: 0px;
   margin-left: auto;
   margin-right: auto;
-  background-color: coral; }
+  border-radius: 3px;
+  background-color: #9B74E8; }
 
 div.menu {
   width: 75vw;
   height: 0vh;
-  margin-top: 0px;
+  margin-top: 5px;
   padding-bottom: 0px;
   margin-left: auto;
   margin-right: auto;
-  background-color: darkblue;
+  background-color: #9B74E8;
+  border-radius: 10px;
   visibility: hidden;
   transition: height 0.2s ease-in-out, visibility 0s linear 0.2s; }
   div.menu *:first-child {
     margin-top: 0px; }
   div.menu p {
-    color: white; }
+    color: white;
+    font-family: "Imprima", sans-serif; }
 
 div.show {
   height: 15vh;
   visibility: visible;
   transition: visibility 0s linear 0s, height 0.2s ease-in-out; }
+
+img.portrait {
+  width: 75vw;
+  height: auto;
+  margin-left: 13vw;
+  margin-top: 5vh; }
+
+footer {
+  display: none; }
 
 @media only screen and (min-device-width: 799px) {
   header {
@@ -58,7 +71,12 @@ div.show {
     margin-top: -2vh; }
 
   .circle {
-    display: none; } }
+    display: none; }
+
+  img.portrait {
+    width: 30vw;
+    height: auto;
+    margin-top: 20vh; } }
 main.indexGrid {
   display: grid;
   grid-template-rows: repeat(4, 1fr);
@@ -69,11 +87,13 @@ main.indexGrid {
 
 div.aboutMe {
   width: 75vw;
-  height: 30vh;
+  height: 55vh;
   margin-top: 5vh;
+  margin-bottom: 0vh;
   margin-left: auto;
   margin-right: auto;
-  background-color: crimson; }
+  border-radius: 3px;
+  background-color: #F06089; }
 
 @media only screen and (min-device-width: 799px) {
   main.indexGrid {
@@ -83,6 +103,7 @@ div.aboutMe {
 
   div.aboutMe {
     margin-top: 20vh;
+    margin-bottom: 5vh;
     margin-left: 10vw;
     width: 30vw;
     height: 80vh; } }

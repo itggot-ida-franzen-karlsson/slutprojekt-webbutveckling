@@ -9,11 +9,13 @@ main.indexGrid {
 
 div.aboutMe {
     width: 75vw;
-    height: 30vh;
+    height: 55vh;
     margin-top: 5vh;
+    margin-bottom: 0vh;
     margin-left: auto;
     margin-right: auto;
-    background-color: crimson;
+    border-radius: 3px;
+    background-color: #F06089;
 }
 
 @media only screen and (min-device-width:799px) {
@@ -25,8 +27,11 @@ div.aboutMe {
 
     div.aboutMe {
         margin-top: 20vh;
+        margin-bottom: 5vh;
         margin-left: 10vw;
         width: 30vw;
         height: 80vh;
     }
+
+
 }
