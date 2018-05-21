@@ -120,9 +120,10 @@ footer {
 @media only screen and (min-device-width:799px) {
    
     header {
-        height: 50vh;
+        display: none;
+
         &>img {
-            display: none;
+            display: flex;
         }
     }
 
@@ -130,8 +131,18 @@ footer {
         width: 100vw;
         height: 10vh;
         margin-top: -2vh;
-    }
 
+        &>h1 {
+            display: none;
+        }
+
+        a {
+            font-family: $font-primary;
+            font-size: 25px;
+            color: $primary-color;
+            text-decoration: none;
+        }
+    }
 
     img.portrait {
         width: 30vw;
@@ -139,7 +150,7 @@ footer {
         margin-top: 20vh;
     }
 
-    footer{
+    footer {
 
     }
 }
