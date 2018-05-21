@@ -1,6 +1,6 @@
 main.indexGrid {
     display: grid;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-template-columns: 1fr;
     top: 25vh;
     width: 100%;
@@ -8,6 +8,15 @@ main.indexGrid {
 }
 
 div.aboutMe {
+
+    h3 {
+        margin: 20px;
+    }
+
+    p {
+        margin: 20px;
+    }
+
     width: 75vw;
     height: 55vh;
     margin-top: 5vh;

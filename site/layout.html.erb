@@ -5,17 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Cantata+One|Imprima" rel="stylesheet">
-    <title>Document</title>
+    <title>Art Gallery</title>
 </head>
 <body>
     <header>
-        <div class="circle"></div>
+        <div class="header-bg">
+            <img src="./img/julia-razumova-tumblr-orww9bwyh61sotmbgo1-1280.png" alt="header">
+        </div>
+        <img src="./img/1b3ae5366d73a53a06f672a0b8d8e8cf.jpg" alt="profile">
     </header>
     <div class="menuButton" onclick="toggleMenu()">
-        <p>menu</p>
+        <h1>Menu</h1>
     </div>
     <div class="menu">
-        <p>kek</p>
+        <ul>
+            <li><a href="gallery.html">Artgallery</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
     </div>
     <%= yield%>
     <script src="./js/main.js"></script>

@@ -9,30 +9,37 @@ body {
 }
 
 header {
-    .circle{
+    div.header-bg {
+        height: 30vh;
+        overflow: hidden;
+        img {
+            width: 100vw;
+            height: auto;
+        }
+    }
+
+    &>img {
         position: absolute;
         width: 40vw;
         height: 40vw;
         border-radius: 50%;
         background: black;
-        left: 50%;
-        bottom: 0;
-        transform: translate(-50%, 50%);
+        left: 30vw;
+        top: 30vh;
+        transform: translateY(-20vw);
     }
-    position: relative;
-    height: 40vh;
-    background-color: cornflowerblue;   
 }
 
 div.menuButton {
-    p {
+    h1 {
         font-family: $font-primary;
         color: #ffffff;
+        font-size: 30px;
+        margin-left: 15px;
     }
 
     display: flex;
     align-items: center;
-    justify-content: center;
     width: 75vw;
     height: 10vh;
     margin-top: 20vh;
@@ -45,13 +52,23 @@ div.menuButton {
 }
 
 div.menu {
-    *:first-child {
-        margin-top: 0px;
-    }
-    p {
+    a {
         color: white;
-        font-family: $font-secondary;
+        font-family: $font-primary;
+        font-size: 25px;
+        text-decoration: none;
     }
+    
+    li {
+        margin-top: 10px;   
+    }
+
+    ul {
+        margin-left: 15px;
+        // margin-top: 10px;
+        list-style-type: none; 
+    }
+
     width: 75vw;
     height: 0vh;
     margin-top: 5px;
@@ -65,7 +82,7 @@ div.menu {
 }
 
 div.show {
-    height: 15vh;
+    height: 20vh;
     visibility: visible;
     transition: visibility 0s linear 0s, height 0.2s ease-in-out;
 }
@@ -77,6 +94,25 @@ img.portrait {
     margin-top: 5vh;
 }
 
+h3 {
+    font-family: $font-primary;
+    color: $primary-color;
+}
+
+h2 {
+    font-family: $font-primary;
+    color: $primary-color;
+}
+
+p {
+    font-family: $font-secondary;
+    color: $primary-color;
+}
+
+img {
+    border-radius: 3px;
+}
+
 footer {
     display: none;
 }
@@ -85,6 +121,9 @@ footer {
    
     header {
         height: 50vh;
+        &>img {
+            display: none;
+        }
     }
 
     div.menuButton {
@@ -93,9 +132,6 @@ footer {
         margin-top: -2vh;
     }
 
-    .circle {
-        display: none;
-    }
 
     img.portrait {
         width: 30vw;
