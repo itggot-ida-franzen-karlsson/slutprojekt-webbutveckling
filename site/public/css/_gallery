@@ -1,5 +1,14 @@
-.iconOne h2 {
-  position: relative; }
-.iconOne img {
-  border-radius: 50%;
-  width: 75vw; }
+.icons {
+  display: inline; }
+  .icons h2 {
+    width: 30vw;
+    text-align: center;
+    font-size: 80px;
+    transform: translateY(-21vw);
+    margin-left: 13vw;
+    display: inline-block; }
+  .icons img {
+    border-radius: 50%;
+    width: 30vw;
+    margin-left: 13vw;
+    margin-top: 10vh; }

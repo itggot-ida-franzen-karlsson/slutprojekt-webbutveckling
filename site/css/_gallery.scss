@@ -1,10 +1,20 @@
-.iconOne {
+.icons {
+
+    display: inline;
+
     h2 {
-        position: relative;
+        width: 30vw;
+        text-align: center;
+        font-size: 80px;
+        transform: translateY(-21vw);
+        margin-left: 13vw;
+        display: inline-block;
     }
+
     img {
         border-radius: 50%;
-        width: 75vw;
-        
+        width: 30vw;
+        margin-left: 13vw;
+        margin-top: 10vh;
     }
 }
