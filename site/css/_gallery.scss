@@ -1,20 +1,60 @@
 .icons {
+    margin-bottom: 0;
 
-    display: inline;
-
-    h2 {
-        width: 30vw;
-        text-align: center;
-        font-size: 80px;
-        transform: translateY(-21vw);
-        margin-left: 13vw;
-        display: inline-block;
-    }
 
     img {
+        display: block;
         border-radius: 50%;
-        width: 30vw;
-        margin-left: 13vw;
-        margin-top: 10vh;
+        width: 75vw;
+        margin-top: 5vh;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 55px;
+        transform: translateY(-81vh);
+        display: block;
+    }
+
+    h2:first-of-type {
+        margin-bottom: 38vh;
+    }
+
+}
+
+@media only screen and (min-device-width:799px) {
+
+    .icons {
+
+        display: inline;
+    
+        h2 {
+            width: 30vw;
+            text-align: center;
+            font-size: 80px;
+            transform: translateY(-21vw);
+            margin-left: 13vw;
+            display: inline-block;
+        }
+    
+        img {
+            display: inline;
+            border-radius: 50%;
+            width: 30vw;
+            margin-left: 13vw;
+            margin-top: 10vh;
+        }
     }
 }
+
+// TODO: -Fixa ikonen i menyn för desktop
+//       -Fixa mobilmenyn
+//       -Minska mellanrummet mellan footer och ikoner (_gallery.scss)
+//       -Sprite sheet (lägga in svg ikoner i desktop footer
+//       -Aligna bild och about me för desktop på home
+//       -Fixa ikoner på gallerysidan till a-taggar
+//       -Lägga till två nya sidor för gallerier
+//       -Börja designa på contact sidan
+//       -Lägga in parallax och dess bild

@@ -1,5 +1,5 @@
 body {
-  width: 100vw;
+  width: 100%;
   height: 100%;
   margin: 0px;
   padding: 0px;
@@ -185,16 +185,35 @@ div.aboutMe {
   div.displayNoneDesktop {
     display: none; } }
 .icons {
-  display: inline; }
-  .icons h2 {
-    width: 30vw;
-    text-align: center;
-    font-size: 80px;
-    transform: translateY(-21vw);
-    margin-left: 13vw;
-    display: inline-block; }
+  margin-bottom: 0; }
   .icons img {
+    display: block;
     border-radius: 50%;
-    width: 30vw;
-    margin-left: 13vw;
-    margin-top: 10vh; }
+    width: 75vw;
+    margin-top: 5vh;
+    margin-left: auto;
+    margin-right: auto; }
+  .icons h2 {
+    text-align: center;
+    font-size: 55px;
+    transform: translateY(-81vh);
+    display: block; }
+  .icons h2:first-of-type {
+    margin-bottom: 38vh; }
+
+@media only screen and (min-device-width: 799px) {
+  .icons {
+    display: inline; }
+    .icons h2 {
+      width: 30vw;
+      text-align: center;
+      font-size: 80px;
+      transform: translateY(-21vw);
+      margin-left: 13vw;
+      display: inline-block; }
+    .icons img {
+      display: inline;
+      border-radius: 50%;
+      width: 30vw;
+      margin-left: 13vw;
+      margin-top: 10vh; } }
