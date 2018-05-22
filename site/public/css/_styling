@@ -96,24 +96,19 @@ footer {
     header > img {
       display: flex; }
 
-  div.menuButton {
-    width: 100vw;
+  div.menu {
+    visibility: visible;
     height: 10vh;
-    margin-top: -2vh; }
-    div.menuButton > h1 {
-      display: none; }
-    div.menuButton a {
-      font-family: "Cantata One", serif;
-      font-size: 25px;
-      color: #ffffff;
-      text-decoration: none; }
-    div.menuButton .desktopMenu ul {
-      width: 90vw;
-      list-style: none; }
-      div.menuButton .desktopMenu ul li {
-        display: inline;
-        float: right;
-        margin-left: 40px; }
+    width: 100vw;
+    border-radius: 0%; }
+    div.menu li {
+      display: inline;
+      float: right;
+      margin-right: 4vw;
+      margin-top: 2vw; }
+
+  div.menuButton {
+    display: none; }
 
   img.portrait {
     width: 30vw;
