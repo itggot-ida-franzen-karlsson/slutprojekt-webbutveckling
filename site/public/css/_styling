@@ -107,6 +107,13 @@ footer {
       font-size: 25px;
       color: #ffffff;
       text-decoration: none; }
+    div.menuButton .desktopMenu ul {
+      width: 90vw;
+      list-style: none; }
+      div.menuButton .desktopMenu ul li {
+        display: inline;
+        float: right;
+        margin-left: 40px; }
 
   img.portrait {
     width: 30vw;
