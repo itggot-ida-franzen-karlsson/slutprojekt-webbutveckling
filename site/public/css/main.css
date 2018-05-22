@@ -92,14 +92,21 @@ footer {
 
 @media only screen and (min-device-width: 799px) {
   header {
-    height: 50vh; }
+    display: none; }
     header > img {
-      display: none; }
+      display: flex; }
 
   div.menuButton {
     width: 100vw;
     height: 10vh;
     margin-top: -2vh; }
+    div.menuButton > h1 {
+      display: none; }
+    div.menuButton a {
+      font-family: "Cantata One", serif;
+      font-size: 25px;
+      color: #ffffff;
+      text-decoration: none; }
 
   img.portrait {
     width: 30vw;
