@@ -125,4 +125,10 @@ footer {
   img.portrait {
     width: 30vw;
     height: auto;
-    margin-top: 20vh; } }
+    margin-top: 20vh; }
+
+  footer {
+    width: 100%;
+    height: 15vh;
+    background-color: #9B74E8;
+    display: block !important; } }
