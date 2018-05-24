@@ -65,7 +65,7 @@ div.menu {
   div.menu li {
     margin-top: 10px; }
   div.menu ul {
-    margin-left: 15px;
+    padding-left: 30px;
     list-style-type: none; }
 
 div.show {
@@ -101,16 +101,22 @@ footer {
   header {
     display: none; }
     header > img {
-      display: flex;
-      height: 10vh;
-      width: 20vw; }
+      position: absolute;
+      height: 100px;
+      width: 100px;
+      right: 0px;
+      top: 500px;
+      transform: translateY(0); }
 
   div.menu {
+    position: fixed;
     visibility: visible;
     height: 10vh;
     width: 100vw;
     border-radius: 0%;
-    margin: 0px; }
+    margin: 0px;
+    z-index: 100;
+    top: 0px; }
     div.menu ul {
       margin: 0px; }
     div.menu li {
@@ -136,7 +142,7 @@ footer {
     display: block; }
     footer ul {
       padding: 0px;
-      width: 40vw;
+      width: 50vw;
       list-style-type: none;
       margin-left: 32vw; }
     footer li {
@@ -164,7 +170,7 @@ div.aboutMe {
   margin-right: auto;
   border-radius: 3px;
   background-color: #F06089; }
-  div.aboutMe h3 {
+  div.aboutMe h2 {
     margin: 20px; }
   div.aboutMe p {
     margin: 20px; }
@@ -196,10 +202,10 @@ div.aboutMe {
   .icons h2 {
     text-align: center;
     font-size: 55px;
-    transform: translateY(-81vh);
+    transform: translateY(-74vh);
     display: block; }
   .icons h2:first-of-type {
-    margin-bottom: 38vh; }
+    margin-bottom: 36vh; }
 
 @media only screen and (min-device-width: 799px) {
   .icons {
@@ -217,3 +223,77 @@ div.aboutMe {
       width: 30vw;
       margin-left: 13vw;
       margin-top: 10vh; } }
+.gallery h1 {
+  font-size: 40px;
+  color: #ffffff;
+  font-family: "Cantata One", serif;
+  text-align: center; }
+.gallery img {
+  margin-top: 5vh;
+  width: 75vw;
+  height: auto;
+  border-radius: 3px;
+  margin-left: 12.5vw; }
+
+.bg {
+  background: url("./img/Parallax_bg.png");
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 300%;
+  z-index: -1; }
+
+@media only screen and (min-device-width: 799px) {
+  .gallery {
+    align-content: center; }
+    .gallery img {
+      width: 20vw;
+      height: auto;
+      margin: 6.4vw; }
+    .gallery h1 {
+      margin-top: 20vh; } }
+.contactBox {
+  display: block;
+  background-color: #3D95D9;
+  width: 75vw;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 3px; }
+  .contactBox h2 {
+    padding: 20px; }
+  .contactBox p {
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px; }
+
+.contactLinks a {
+  font-family: "Cantata One", serif;
+  color: #ffffff;
+  font-size: 30px;
+  text-decoration: none; }
+.contactLinks li {
+  list-style-type: none;
+  margin: 40px;
+  text-align: center; }
+.contactLinks ul {
+  margin-top: 10vh; }
+
+@media only screen and (min-device-width: 799px) {
+  .contactBox {
+    margin-top: 20vh;
+    width: 50vw; }
+
+  h2 {
+    padding: 20px; }
+
+  p {
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px; }
+
+  .img img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75vw; } }

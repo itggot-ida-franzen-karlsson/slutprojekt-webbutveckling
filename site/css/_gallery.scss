@@ -14,12 +14,12 @@
     h2 {
         text-align: center;
         font-size: 55px;
-        transform: translateY(-81vh);
+        transform: translateY(-74vh);
         display: block;
     }
 
     h2:first-of-type {
-        margin-bottom: 38vh;
+        margin-bottom: 36vh;
     }
 
 }
@@ -51,6 +51,7 @@
 
 // TODO: -Fixa ikonen i menyn för desktop
 //       -Fixa mobilmenyn
+//       -Fixa centrering på artgalleryknappar
 //       -Minska mellanrummet mellan footer och ikoner (_gallery.scss)
 //       -Sprite sheet (lägga in svg ikoner i desktop footer
 //       -Aligna bild och about me för desktop på home

@@ -15,7 +15,7 @@ div.aboutMe {
   margin-right: auto;
   border-radius: 3px;
   background-color: #F06089; }
-  div.aboutMe h3 {
+  div.aboutMe h2 {
     margin: 20px; }
   div.aboutMe p {
     margin: 20px; }

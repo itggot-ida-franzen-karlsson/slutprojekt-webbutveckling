@@ -72,11 +72,9 @@ div.menu {
     }
 
     ul {
-        margin-left: 15px;
-        // margin-top: 10px;
+        padding-left: 30px;
         list-style-type: none; 
     }
-
 
     width: 75vw;
     height: 0vh;
@@ -131,20 +129,25 @@ footer {
 
     header {
         display: none;
-
         &>img {
-            display: flex;
-            height: 10vh;
-            width: 20vw;
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            right: 0px;
+            top: 500px;
+            transform: translateY(0);
         }
     }
 
     div.menu {
+        position: fixed;
         visibility: visible;
         height: 10vh;
         width: 100vw;
         border-radius: 0%;
         margin: 0px;
+        z-index: 100;
+        top: 0px;
 
         ul {
             margin: 0px;
@@ -178,7 +181,7 @@ footer {
 
         ul {
             padding: 0px;
-            width: 40vw;
+            width: 50vw;
             list-style-type: none;
             margin-left: 32vw;
         }

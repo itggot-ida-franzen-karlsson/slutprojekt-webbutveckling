@@ -1,0 +1,46 @@
+@import '_vars.scss';
+
+.gallery {
+    h1 {  
+        font-size: 40px;
+        color: $primary-color;
+        font-family: $font-primary;
+        text-align: center;
+    }
+
+    img { 
+        margin-top: 5vh;
+        width: 75vw;
+        height: auto;
+        border-radius: 3px;
+        margin-left: 12.5vw;
+    }
+}
+
+.bg {
+    background: url('./img/Parallax_bg.png');
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 300%;
+    z-index: -1;
+}
+
+@media only screen and (min-device-width: 799px) {
+
+    .gallery {
+
+        align-content: center;
+
+        img {
+            width: 20vw;
+            height: auto;
+            margin: 6.4vw;
+        }
+
+        h1 {
+            margin-top: 20vh;
+        }
+    }
+}
