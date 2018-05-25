@@ -38,7 +38,7 @@ div.menuButton {
     color: #ffffff;
     font-size: 30px;
     margin-left: 30px;
-    width: 73%; }
+    width: 75vw; }
   div.menuButton i.material-icons {
     font-size: 60px;
     color: #ffffff;
@@ -144,7 +144,7 @@ footer {
       padding: 0px;
       width: 50vw;
       list-style-type: none;
-      margin-left: 32vw; }
+      margin-left: 30vw; }
     footer li {
       display: inline;
       margin: 25px; }
@@ -186,7 +186,7 @@ div.aboutMe {
     margin-bottom: 5vh;
     margin-left: 10vw;
     width: 30vw;
-    height: auto; }
+    height: 35vh; }
 
   div.displayNoneDesktop {
     display: none; } }
@@ -209,20 +209,34 @@ div.aboutMe {
 
 @media only screen and (min-device-width: 799px) {
   .icons {
-    display: inline; }
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 20vh; }
+    .icons a {
+      grid-row: 1/2;
+      width: 30vw;
+      padding: 0px; }
+    .icons a:nth-of-type(1) {
+      grid-column: 1/2;
+      background-image: url(../img/digital.png); }
+    .icons a:nth-of-type(2) {
+      grid-column: 2/3; }
     .icons h2 {
+      grid-row: 1/2; }
+    .icons h2:nth-of-type(1) {
+      grid-column: 1/2; }
+    .icons h2:nth-of-type(2) {
+      grid-column: 2/3; }
+    .icons h2 {
+      margin-top: 20vh;
       width: 30vw;
       text-align: center;
       font-size: 80px;
-      transform: translateY(-21vw);
-      margin-left: 13vw;
-      display: inline-block; }
-    .icons img {
-      display: inline;
-      border-radius: 50%;
-      width: 30vw;
-      margin-left: 13vw;
-      margin-top: 10vh; } }
+      transform: translateY(0vw);
+      margin-left: 9vw;
+      display: inline-block;
+      position: static; } }
 .gallery h1 {
   font-size: 40px;
   color: #ffffff;
@@ -236,7 +250,7 @@ div.aboutMe {
   margin-left: 12.5vw; }
 
 .bg {
-  background: url("./img/Parallax_bg.png");
+  background: url("../img/Parallax_bg.png");
   position: fixed;
   width: 100%;
   top: 0;
@@ -277,7 +291,11 @@ div.aboutMe {
   margin: 40px;
   text-align: center; }
 .contactLinks ul {
-  margin-top: 10vh; }
+  margin-top: 10vh;
+  padding-left: 0; }
+
+.img {
+  display: none; }
 
 @media only screen and (min-device-width: 799px) {
   .contactBox {
@@ -287,13 +305,16 @@ div.aboutMe {
   h2 {
     padding: 20px; }
 
-  p {
+  a {
     padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px; }
 
-  .img img {
+  .img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 75vw; } }
+    margin-top: 20vh; }
+    .img img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 75vw; } }

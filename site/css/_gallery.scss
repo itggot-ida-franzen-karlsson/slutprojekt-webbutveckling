@@ -27,35 +27,54 @@
 @media only screen and (min-device-width:799px) {
 
     .icons {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
 
-        display: inline;
+        a {
+            grid-row: 1/2;
+            width: 30vw;
+            padding: 0px;
+        }
+
+        a:nth-of-type(1) {
+            grid-column: 1/2;
+            background-image: url(../img/digital.png);
+            
+        }
+
+        a:nth-of-type(2) {
+            grid-column: 2/3;
+        }
+
+        h2 {
+            grid-row: 1/2;
+        }
+
+        h2:nth-of-type(1) {
+            grid-column: 1/2;
+        }
+
+        h2:nth-of-type(2) {
+            grid-column: 2/3;
+        }
+
+        margin-top: 20vh;
     
         h2 {
+            margin-top: 20vh;
             width: 30vw;
             text-align: center;
             font-size: 80px;
-            transform: translateY(-21vw);
-            margin-left: 13vw;
+            transform: translateY(0vw);
+            margin-left: 9vw;
             display: inline-block;
-        }
-    
-        img {
-            display: inline;
-            border-radius: 50%;
-            width: 30vw;
-            margin-left: 13vw;
-            margin-top: 10vh;
+            position: static;
         }
     }
 }
 
 // TODO: -Fixa ikonen i menyn för desktop
-//       -Fixa mobilmenyn
 //       -Fixa centrering på artgalleryknappar
 //       -Minska mellanrummet mellan footer och ikoner (_gallery.scss)
 //       -Sprite sheet (lägga in svg ikoner i desktop footer
-//       -Aligna bild och about me för desktop på home
-//       -Fixa ikoner på gallerysidan till a-taggar
-//       -Lägga till två nya sidor för gallerier
-//       -Börja designa på contact sidan
-//       -Lägga in parallax och dess bild

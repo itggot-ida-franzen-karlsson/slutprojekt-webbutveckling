@@ -38,7 +38,7 @@ div.menuButton {
     color: #ffffff;
     font-size: 30px;
     margin-left: 30px;
-    width: 73%; }
+    width: 75vw; }
   div.menuButton i.material-icons {
     font-size: 60px;
     color: #ffffff;
@@ -144,7 +144,7 @@ footer {
       padding: 0px;
       width: 50vw;
       list-style-type: none;
-      margin-left: 32vw; }
+      margin-left: 30vw; }
     footer li {
       display: inline;
       margin: 25px; }
