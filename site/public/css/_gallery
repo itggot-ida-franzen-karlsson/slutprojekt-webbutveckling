@@ -1,16 +1,21 @@
 .icons {
   margin-bottom: 0; }
   .icons a {
+    display: block;
     width: 75vw;
     height: 75vw;
-    border-radius: 50%; }
+    border-radius: 50%;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto; }
   .icons a:nth-of-type(1) {
     background-image: url(../img/digital.png);
-    justify-self: center; }
+    background-size: 75vw 75vw; }
   .icons a:nth-of-type(2) {
     background-image: url(../img/analog.png);
-    justify-self: center; }
+    background-size: 75vw 75vw; }
   .icons h2 {
+    padding-top: 15vh;
     text-align: center;
     font-size: 55px;
     display: block;
@@ -29,23 +34,23 @@
       height: 30vw;
       padding: 0px; }
     .icons a:nth-of-type(1) {
+      background-size: 30vw 30vw;
       grid-column: 1/2;
-      background-image: url(../img/digital.png);
+      background-image: url("../img/digital.png");
       border-radius: 50%;
       justify-self: center; }
     .icons a:nth-of-type(2) {
+      background-size: 30vw 30vw;
       grid-column: 2/3;
-      background-image: url(../img/analog.png);
+      background-image: url("../img/analog.png");
       border-radius: 50%;
       justify-self: center; }
-    .icons h2 {
-      grid-row: 1/2; }
     .icons h2:nth-of-type(1) {
       grid-column: 1/2; }
     .icons h2:nth-of-type(2) {
       grid-column: 2/3; }
     .icons h2 {
-      margin-top: 11vw;
+      grid-row: 1/2;
       width: 28vw;
       text-align: center;
       font-size: 80px;
