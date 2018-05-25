@@ -1,19 +1,21 @@
 .icons {
   margin-bottom: 0; }
-  .icons img {
-    display: block;
-    border-radius: 50%;
+  .icons a {
     width: 75vw;
-    margin-top: 5vh;
-    margin-left: auto;
-    margin-right: auto; }
+    height: 75vw;
+    border-radius: 50%; }
+  .icons a:nth-of-type(1) {
+    background-image: url(../img/digital.png);
+    justify-self: center; }
+  .icons a:nth-of-type(2) {
+    background-image: url(../img/analog.png);
+    justify-self: center; }
   .icons h2 {
     text-align: center;
     font-size: 55px;
-    transform: translateY(-74vh);
-    display: block; }
-  .icons h2:first-of-type {
-    margin-bottom: 36vh; }
+    display: block;
+    height: 75vw;
+    text-decoration: none; }
 
 @media only screen and (min-device-width: 799px) {
   .icons {
@@ -24,12 +26,18 @@
     .icons a {
       grid-row: 1/2;
       width: 30vw;
+      height: 30vw;
       padding: 0px; }
     .icons a:nth-of-type(1) {
       grid-column: 1/2;
-      background-image: url(../img/digital.png); }
+      background-image: url(../img/digital.png);
+      border-radius: 50%;
+      justify-self: center; }
     .icons a:nth-of-type(2) {
-      grid-column: 2/3; }
+      grid-column: 2/3;
+      background-image: url(../img/analog.png);
+      border-radius: 50%;
+      justify-self: center; }
     .icons h2 {
       grid-row: 1/2; }
     .icons h2:nth-of-type(1) {
@@ -37,11 +45,10 @@
     .icons h2:nth-of-type(2) {
       grid-column: 2/3; }
     .icons h2 {
-      margin-top: 20vh;
-      width: 30vw;
+      margin-top: 11vw;
+      width: 28vw;
       text-align: center;
       font-size: 80px;
       transform: translateY(0vw);
-      margin-left: 9vw;
       display: inline-block;
       position: static; } }
